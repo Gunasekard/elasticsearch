@@ -3,11 +3,11 @@ on:
   push:
     branches: main
 jobs:
-   runs-on: ubuntu-latest
-    steps:
-      - name: Upload GitHub Action workflows logs to elastic
+  runs-on: ubuntu-latest
+  steps:
+    - name: Upload GitHub Action workflows logs to elastic
       uses: actions/checkout@v2
-        with:
+      with:
         github_token: "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"
         github_org: "Gunasekard"
         github_repository: "elasticsearch"
@@ -15,4 +15,5 @@ jobs:
         elastic_host: "sample1.kb.us-central1.gcp.cloud.es.io"
         elastic_api_key_id: "sample1"
         elastic_api_key: "xjlnJ2E2hfzlPSzTgDHztRPk"
-        elastic_index: "ci-cd"
+        elastic_index: "elasticsearch"
+
