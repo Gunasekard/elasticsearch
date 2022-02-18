@@ -5,8 +5,8 @@ on:
     jobs:
      runs-on: ubuntu-latest
    steps:
-  - name: Upload GitHub Action workflows logs to elastic
-    uses: actions/checkout@v2
+       - name: Upload GitHub Action workflows logs to elastic
+         uses: actions/checkout@v2
     with:
       github_token: "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"
       github_org: "Gunasekard"
