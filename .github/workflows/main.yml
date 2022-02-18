@@ -1,18 +1,18 @@
 name: elasticsearch
 on:
   push:
-    branches: elk
-    jobs:
-     runs-on: ubuntu-latest
-   steps:
-  - name: Upload GitHub Action workflows logs to elastic
-    uses: actions/checkout@v2
-    with:
-      github_token: "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"
-      github_org: "Gunasekard"
-      github_repository: "elasticsearch"
-      github_run_id: "${{ github.run_id }}"
-      elastic_host: "sample1.kb.us-central1.gcp.cloud.es.io"
-      elastic_api_key_id: "sample1"
-      elastic_api_key: "xjlnJ2E2hfzlPSzTgDHztRPk"
-      elastic_index: "ci-cd"
+    branches: main
+jobs:
+   runs-on: ubuntu-latest
+    steps:
+     - name: Upload GitHub Action workflows logs to elastic
+        uses: actions/checkout@v2
+        with:
+        github_token: "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"
+        github_org: "Gunasekard"
+        github_repository: "elasticsearch"
+        github_run_id: "${{ github.run_id }}"
+        elastic_host: "sample1.kb.us-central1.gcp.cloud.es.io"
+        elastic_api_key_id: "sample1"
+        elastic_api_key: "xjlnJ2E2hfzlPSzTgDHztRPk"
+        elastic_index: "ci-cd"
