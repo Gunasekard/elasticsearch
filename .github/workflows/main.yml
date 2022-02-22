@@ -9,13 +9,13 @@ jobs:
   - name: Upload GitHub Action workflows logs to elastic
     uses: actions/checkout@v2
     with:
-     github_token: "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"
+     github_token: "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"
      github_org: "Gunasekard"
      github_repository: "elasticsearch"
      github_run_id: "${{ github.run_id }}"
-     elastic_host: "sample1.kb.us-central1.gcp.cloud.es.io"
+     elastic_host: "https://sample1.kb.us-east-1.aws.found.io:9243"
      elastic_api_key_id: "sample1"
-     elastic_api_key: "xjlnJ2E2hfzlPSzTgDHztRPk"
+     elastic_api_key: "OXFzBfVBUI7SGnfHmdWcHqsK"
      elastic_index: "elasticsearch"
      
      
