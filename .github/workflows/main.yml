@@ -14,8 +14,8 @@ jobs:
      github_repository: "elasticsearch"
      github_run_id: "${{ github.run_id }}"
      elastic_host: "https://sample1.kb.us-east-1.aws.found.io:9243"
-     elastic_api_key_id: "sample1"
-     elastic_api_key: "OXFzBfVBUI7SGnfHmdWcHqsK"
+     elastic_api_key_id: "QhdSIn8BOIEYbNgnYDJ4"
+     elastic_api_key: "EN7xiw5IQbih7KhGAodZcQ"
      elastic_index: "elasticsearch"
      
      
