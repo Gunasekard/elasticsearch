@@ -8,7 +8,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       with:
-        submodules: 'recursive'
+        #submodules: 'recursive'
         token: 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
     - name: Set up Python 3.7.8
       uses: actions/setup-python@v2
@@ -16,4 +16,5 @@ jobs:
         python-version: '3.7.8'
     - name: Run script that echo outputs
       run: python test.py
+      
       
